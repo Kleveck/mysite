@@ -1,0 +1,59 @@
+/* Base styles for all devices */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  /* Styles for devices with a maximum width of 768px (e.g., smartphones) */
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      text-align: center;
+    }
+  }
+  
+  /* Styles for devices with a minimum width of 768px (e.g., tablets and larger) */
+  
+  @media screen and (min-width: 768px) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .navigation {
+      flex: 1;
+      text-align: right;
+    }
+  
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .content-item {
+      width: 48%;
+    }
+  }
+  
+  /* Styles for devices with a minimum width of 1200px (e.g., desktops) */
+  
+  @media screen and (min-width: 1200px) {
+    .content-item {
+      width: 31%;
+    }
+  }
+  
